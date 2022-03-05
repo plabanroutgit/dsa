@@ -2,7 +2,7 @@ package alimir;
 
 //T: O(n)
 //S: O(n)
-public class RecursiveReverseLinkedList {
+public class ReverseLinkedListRecursive {
 	public ListNode reverseList(ListNode head) {
 		if (head == null || head.next == null)
 			return head;
@@ -13,3 +13,5 @@ public class RecursiveReverseLinkedList {
 	}
 }
 // Test with 1 -> 2 -> NULL
+//         head  p
+

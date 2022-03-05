@@ -55,16 +55,18 @@ public class MyArrayList {
 	// Removes the element at the specified position in this list.
 	// Shifts any subsequent elements to the left (subtracts one from their
 	// indices).
-	public <E> E remove(int index) {
+	/*public <E> E remove(int index) {
 		rangeCheck(index);
 		//modCount++;
-		<E> E oldValue = elementData(index);
+		//<E> E oldValue = elementData(index);
+		
 		int numMoved = size - index - 1;
 		if (numMoved > 0)
 			System.arraycopy(elementData, index + 1, elementData, index, numMoved);
 		elementData[--size] = null; // clear to let GC do its work
-		return oldValue;
-	}
+		//return oldValue;
+		return (E)0;
+	}*/
 
 	private void ensureCapacityInternal(int minCapacity) // Detemining the current size of occupied elements
 	{

@@ -3,7 +3,7 @@ package alimir;
 
 //T: O(n)
 //S: O(1) Good compared to Recursive approach
-public class IterativeReverseLinkedList {
+public class ReverseLinkedListIterative {
 	public ListNode reverseList(ListNode head) {
 		ListNode prev = null;
 		ListNode curr = head;
