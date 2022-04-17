@@ -8,6 +8,10 @@ public class MyLinkedList1 {
 		head = null;
 	}
 
+	public ListNode getHead() {
+		return head;
+	}
+
 	/** Helper function to return the index-th node in the linked list. */
 	ListNode getNode(int index) {
 		ListNode cur = head;
@@ -108,7 +112,7 @@ public class MyLinkedList1 {
 
 	}
 
-	public static ListNode reverseList(ListNode head) {
+	public ListNode reverseList(ListNode head) {
 		ListNode prev = null;
 		ListNode cur = head;
 
@@ -134,7 +138,7 @@ public class MyLinkedList1 {
 
 		System.out.println(mll1.get(0));
 
-		head = reverseList(head);
+		head = mll1.reverseList(head);
 
 		System.out.println(mll1.get(0));
 	}
