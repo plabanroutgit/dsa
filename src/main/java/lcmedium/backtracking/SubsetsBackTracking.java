@@ -38,7 +38,7 @@ public class SubsetsBackTracking {
 		int[] nums = { 1, 2, 3 };
 
 		SubsetsBackTracking s = new SubsetsBackTracking();
-		s.subsets(nums);
+		System.out.println(s.subsets(nums));
 
 	}
 

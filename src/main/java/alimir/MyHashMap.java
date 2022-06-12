@@ -2,11 +2,18 @@ package alimir;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import javafx.util.Pair;
 
 public class MyHashMap {
 	private final int MAX_LEN = 100000; // the amount of buckets
 	private List<Pair<Integer, Integer>>[] map; // hash map implemented by array
+
+	/** Initialize your data structure here. */
+	@SuppressWarnings("unchecked")
+	public MyHashMap() {
+		map = (List<Pair<Integer, Integer>>[]) new ArrayList[MAX_LEN];
+	}
 
 	/** Returns the corresponding bucket index. */
 	private int getIndex(int key) {
@@ -29,12 +36,6 @@ public class MyHashMap {
 			}
 		}
 		return -1;
-	}
-
-	/** Initialize your data structure here. */
-	@SuppressWarnings("unchecked")
-	public MyHashMap() {
-		map = (List<Pair<Integer, Integer>>[]) new ArrayList[MAX_LEN];
 	}
 
 	/** value will always be positive. */

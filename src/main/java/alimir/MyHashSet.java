@@ -7,6 +7,12 @@ public class MyHashSet {
 	private final int MAX_LEN = 100000; // the amount of buckets
 	private List<Integer>[] set; // hash set implemented by array
 
+	/** Initialize your data structure here. */
+	@SuppressWarnings("unchecked")
+	public MyHashSet() {
+		set = (List<Integer>[]) new ArrayList[MAX_LEN];
+	}
+	
 	/** Returns the corresponding bucket index. */
 	private int getIndex(int key) {
 		return key % MAX_LEN;
@@ -30,11 +36,6 @@ public class MyHashSet {
 		return -1;
 	}
 
-	/** Initialize your data structure here. */
-	@SuppressWarnings("unchecked")
-	public MyHashSet() {
-		set = (List<Integer>[]) new ArrayList[MAX_LEN];
-	}
 
 	public void add(int key) {
 		int index = getIndex(key);

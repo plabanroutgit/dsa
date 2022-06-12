@@ -68,7 +68,7 @@ public class ConnectedComponentsinUDGraph {
 		ConnectedComponentsinUDGraph g = new ConnectedComponentsinUDGraph(5); // 5 vertices numbered from 0 to 4
 
 		g.addEdge(1, 0);
-		g.addEdge(2, 3);
+		g.addEdge(1, 2);
 		g.addEdge(3, 4);
 		System.out.println("Following are connected components");
 		g.connectedComponents();
