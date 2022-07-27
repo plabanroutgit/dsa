@@ -1,6 +1,7 @@
 package alimiralgos;
 
 //Java program for implementation of Selection Sort
+//https://www.geeksforgeeks.org/selection-sort/
 public class KthSmallestUsingSelectionSort {
 
 	int[] swap(int[] arr, int i, int min_idx) {

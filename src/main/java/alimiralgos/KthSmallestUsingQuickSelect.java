@@ -1,5 +1,6 @@
 package alimiralgos;
 
+//https://www.geeksforgeeks.org/quickselect-algorithm/
 class KthSmallestUsingQuickSelect {
 
 	// partition function similar to quick sort
